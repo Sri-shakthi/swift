@@ -1,0 +1,127 @@
+
+/* Dreamy Dashboard Styles */
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  background: linear-gradient(135deg, #fceff9 0%, #f6f2ff 100%);
+  border-radius: 25px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+h2 {
+  color: #c084fc;
+  font-family: 'Nunito', cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: #a78bfa;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(167, 139, 250, 0.3);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+button:hover {
+  background-color: #c084fc;
+}
+
+table {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #f0eaff;
+  font-family: 'Nunito', sans-serif;
+}
+
+th {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+tr:hover {
+  background-color: #fdf4ff;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type="text"], select {
+  padding: 0.75rem;
+  border-radius: 15px;
+  border: 1px solid #e0d7ec;
+  font-size: 1rem;
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 350px;
+  font-family: 'Nunito', sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  background-color: #e9d5ff;
+  color: #4c1d95;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #d8b4fe;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  td {
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  th {
+    display: none;
+  }
+}
